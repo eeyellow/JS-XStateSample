@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 50px;
+            background: #EEE;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row m-3">
+            <p class="h5">境外驗證</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="IsOversea" id="IsOversea_Yes">
+                <label class="form-check-label" for="IsOversea_Yes">
+                    是
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="IsOversea" id="IsOversea_No" checked>
+                <label class="form-check-label" for="IsOversea_No">
+                    否
+                </label>
+            </div>
+        </div>
+        <div class="row m-3 row-check row_否">
+            <p class="h5">身分證字號（或統一編號）</p>
+            <div class="form-check">
+                <input class="form-control" type="text" name="IDNumber" id="IDNumber">
+            </div>
+        </div>
+        <div class="row m-3 row-check row_是">
+            <p class="h5">證件編號</p>
+            <div class="form-check">
+                <input class="form-control" type="text" name="LicenesNumber" id="LicenesNumber">
+            </div>
+        </div>
+        <div class="row m-3 row-check row_是">
+            <p class="h5">證件名稱</p>
+            <div class="form-check">
+                <input class="form-control" type="text" name="LicenesName" id="LicenesName">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/xstate@4/dist/xstate.js"></script>
+    <script type="module" src="https://unpkg.com/xstate@4/dist/xstate.web.js"></script>
+    <script type="module" src="./src/2_UI操作.js"></script>
+</body>
+
+</html>

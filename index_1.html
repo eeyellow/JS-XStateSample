@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dotContainer {
+            display: inline-block;
+            border-radius: 10px;
+            border: 1px solid #000;
+            padding: 10px;
+            background-color: #004000;
+        }
+
+        .dot {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid #000;
+        }
+
+        .紅燈 {
+            background-color: #F00;
+        }
+
+        .綠燈 {
+            background-color: #0F0;
+        }
+
+        .黃燈 {
+            background-color: #FF0;
+        }
+
+        .inactive {
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="container1" class="dotContainer">
+        <span class="dot 綠燈 inactive"></span>
+        <span class="dot 黃燈 inactive"></span>
+        <span class="dot 紅燈"></span>
+    </span>
+
+    <div style="margin-top: 100px">
+        <textarea id="LogArea" cols="50" rows="15"></textarea>
+    </div>
+    <div>
+        <button class="燈號轉換">燈號轉換</button>
+    </div>
+    <script type="module" src="https://unpkg.com/xstate@4/dist/xstate.js"></script>
+    <script type="module" src="https://unpkg.com/xstate@4/dist/xstate.web.js"></script>
+    <script type="module" src="./src/1_紅綠燈.js"></script>
+</body>
+
+</html>
